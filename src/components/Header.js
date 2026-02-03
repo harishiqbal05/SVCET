@@ -24,7 +24,17 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo and College Name */}
           <Link to="/" className="flex items-center space-x-3 group" data-testid="logo-link">
-            <div className="w-14 h-14 bg-primary-700 rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:bg-primary-800 transition-colors">
+            <img 
+              src="https://svccollege.ac.in/images/logo.png" 
+              alt="SVCET Logo" 
+              className="w-14 h-14 object-contain group-hover:opacity-80 transition-opacity"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="w-14 h-14 bg-primary-700 rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:bg-primary-800 transition-colors" style={{display: 'none'}}>
               SVCET
             </div>
             <div className="hidden md:block">

@@ -55,17 +55,26 @@ const Departments = () => {
       icon: '🤖',
       description:
         'Data-driven intelligence, machine learning algorithms, deep learning, natural language processing, and cutting-edge AI technologies.',
-      image: 'https://images.unsplash.com/photo-1581092335203-42374bcf7d89?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzA5OTQ1NDg5fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fHx8MTcwOTk0NTQ4OXww&ixlib=rb-4.1.0&q=85',
       highlights: ['Machine Learning', 'Deep Learning', 'Neural Networks', 'Data Science'],
     },
     {
-      name: 'Cyber Security',
-      code: 'CS',
-      icon: '🔒',
+      name: 'Information Technology',
+      code: 'IT',
+      icon: '💾',
       description:
-        'Network security, ethical hacking basics, cryptography, data protection, and preparing cybersecurity professionals for the digital age.',
-      image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHNjaWVuY2V8ZW58MHx8fHwxNzA5OTQ1NDg5fDA&ixlib=rb-4.1.0&q=85',
-      highlights: ['Network Security', 'Ethical Hacking', 'Cryptography', 'Penetration Testing'],
+        'Software engineering, database systems, network security, and IT infrastructure management. Preparing IT professionals for the digital age.',
+      image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxpbmZvcm1hdGlvbiUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzA5OTQ1NDg5fDA&ixlib=rb-4.1.0&q=85',
+      highlights: ['Software Engineering', 'Database Systems', 'Network Security', 'Cloud Computing'],
+    },
+    {
+      name: 'Master of Business Administration',
+      code: 'MBA',
+      icon: '📊',
+      description:
+        'Management, leadership, business strategy, marketing, finance, and developing business leaders for tomorrow.',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nfGVufDB8fHx8MTcwOTk0NTQ4OXww&ixlib=rb-4.1.0&q=85',
+      highlights: ['Strategic Management', 'Marketing', 'Finance', 'Human Resources'],
     },
     {
       name: 'Master of Computer Applications',
@@ -77,13 +86,13 @@ const Departments = () => {
       highlights: ['Advanced Programming', 'System Design', 'Cloud Computing', 'Mobile Development'],
     },
     {
-      name: 'Master of Business Administration',
-      code: 'MBA',
-      icon: '📊',
+      name: 'Science & Humanities',
+      code: 'S&H',
+      icon: '📚',
       description:
-        'Management, leadership, business strategy, marketing, finance, and developing business leaders for tomorrow.',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nfGVufDB8fHx8MTcwOTk0NTQ4OXww&ixlib=rb-4.1.0&q=85',
-      highlights: ['Strategic Management', 'Marketing', 'Finance', 'Human Resources'],
+        'Foundation sciences, mathematics, physics, chemistry, and humanities. Providing strong academic foundation for all engineering disciplines.',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxsaWJyYXJ5fGVufDB8fHx8MTcwOTk0NTQ4OXww&ixlib=rb-4.1.0&q=85',
+      highlights: ['Mathematics', 'Physics', 'Chemistry', 'English Communication'],
     },
   ];
 

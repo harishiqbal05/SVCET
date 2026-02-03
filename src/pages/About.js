@@ -31,24 +31,18 @@ const About = () => {
             <div>
               <h2 className="section-title">Our College</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                S.Veerasamy Chettiar College of Engineering and Technology (SVCET) is a premier
-                engineering institution located in Puliangudi, Tirunelveli District, Tamil Nadu.
-                Established with a vision to provide world-class technical education, we have
-                consistently delivered excellence in engineering and technology education.
+                Founded in 2001 by philanthropist Dr. Murugiah D.Litt in memory of his father Thiru. S.Veerasamy Chettiar, SVCET is part of the S.Veerasamy Chettiar Educational and Charitable Trust established in 1997. Our institution works hard to shape every student into a worthy citizen of this soil.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Affiliated to Anna University and approved by AICTE, SVCET offers a comprehensive
-                range of undergraduate and postgraduate programs designed to meet the evolving
-                needs of the industry and society.
+                Located on an 80-acre campus on the Puliangudi - Sankarankovil road in Tirunelveli District, we are just 3 km from Puliangudi – Madurai National Highway and 13 km from Sankarankovil town. All efforts are made here to enhance the individual caliber of the students to meet the requirements of the present day scenario in the recruitment process of various industries and companies.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our college is committed to nurturing talent, fostering innovation, and developing
-                professionals who can contribute meaningfully to society and the global economy.
+                We stress the need to improve the quality in all aspects. The educational programs are cost effective, flexible and credit based having built in entrepreneurship with stress on self employment and continuity of education at various levels.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1684560207649-a2e137107e44?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBjb2xsZWdlJTIwY2FtcHVzfGVufDB8fHx8MTc3MDA0OTQ4OXww&ixlib=rb-4.1.0&q=85"
+                src="https://svccollege.ac.in/images/slider-images/ece-dept-header.png"
                 alt="Modern SVCET Campus"
                 className="w-full h-96 object-cover"
                 loading="lazy"
@@ -69,9 +63,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-primary-700">Our Vision</h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                To be a center of excellence in engineering and technology education, fostering
-                innovation, research, and holistic development to create globally competitive
-                professionals who contribute to societal advancement and sustainable development.
+                Our vision is to provide professional education through our educational institutions to cater to the rural youth and offering them opportunities of acquiring a quality education and good career.
               </p>
             </div>
 
@@ -81,29 +73,42 @@ const About = () => {
                 <div className="text-5xl mr-4">🎯</div>
                 <h2 className="text-3xl font-bold text-primary-700">Our Mission</h2>
               </div>
-              <ul className="text-gray-600 space-y-3">
-                <li className="flex items-start">
-                  <span className="text-primary-700 mr-2">✓</span>
-                  <span>Provide quality technical education with strong theoretical and practical foundation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-700 mr-2">✓</span>
-                  <span>Foster research, innovation, and entrepreneurship among students and faculty</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-700 mr-2">✓</span>
-                  <span>Develop ethical, socially responsible professionals with leadership qualities</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-700 mr-2">✓</span>
-                  <span>Establish strong industry-academia partnerships for real-world exposure</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-700 mr-2">✓</span>
-                  <span>Create an inclusive learning environment that promotes lifelong learning</span>
-                </li>
-              </ul>
+              <p className="text-gray-600 leading-relaxed">
+                Our mission is to establish educational institutions with State of the Art facilities to ensure students acquire a quality education and reach excellence in all their pursuits.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality Policy */}
+      <section className="py-16 bg-white" data-testid="quality-policy">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="section-title">Quality Policy</h2>
+            <p className="section-subtitle">
+              Our commitment to excellence in education
+            </p>
+          </div>
+          <div className="bg-gradient-to-br from-primary-50 to-white rounded-lg p-8 shadow-lg">
+            <div className="flex items-center mb-6">
+              <div className="text-5xl mr-4">🏆</div>
+              <h3 className="text-2xl font-bold text-primary-700">Our Quality Commitment</h3>
+            </div>
+            <ol className="text-gray-600 space-y-4">
+              <li className="flex items-start">
+                <span className="text-primary-700 font-bold mr-3">1.</span>
+                <span>Industry-ready professionals to be developed through Interactive Teaching-Learning Process, Corporate exposure and project work</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-700 font-bold mr-3">2.</span>
+                <span>Upgradation of faculty through enhancement of their academic qualification, interaction with industry, through seminars etc</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-700 font-bold mr-3">3.</span>
+                <span>Modernizing facilities with world class infrastructure and be the preferred institute of employers for placement</span>
+              </li>
+            </ol>
           </div>
         </div>
       </section>

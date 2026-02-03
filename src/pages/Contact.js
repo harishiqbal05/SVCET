@@ -20,12 +20,12 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    // Netlify Forms handles the submission automatically
-    // We just need to show a success message
-    setFormStatus('success');
+    e.preventDefault();
+    // Show maintenance message for form submission
+    setFormStatus('maintenance');
     setTimeout(() => {
       setFormStatus('');
-    }, 5000);
+    }, 8000);
   };
 
   const contactInfo = [
@@ -58,8 +58,8 @@ const Contact = () => {
     { name: 'Library', email: 'library@svccollege.ac.in' },
   ];
 
-  // Placeholder coordinates for Puliangudi, Tirunelveli
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.123456789!2d77.4!3d8.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNTQnMDAuMCJOIDc3wrAyNCcwMC4wIkU!5e0!3m2!1sen!2sin!4v1234567890";
+  // Exact coordinates for SVCET from Google Maps
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.123456789!2d77.4245381!3d9.1768913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0690f7d76ee07f:0xc10a9792bd8eb8dc!2sS.Veerasamy+Chettiar+College+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1234567890";
 
   return (
     <>
@@ -127,16 +127,36 @@ const Contact = () => {
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
 
-              {formStatus === 'success' && (
+              {formStatus === 'maintenance' && (
                 <div
-                  className="bg-green-50 border-l-4 border-green-500 p-4 mb-6"
+                  className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6 rounded-lg shadow-md"
                   role="alert"
-                  data-testid="form-success-message"
+                  data-testid="form-maintenance-message"
                 >
-                  <p className="text-green-700">
-                    <strong>Thank you!</strong> Your message has been sent successfully. We'll
-                    contact you soon.
-                  </p>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <svg className="h-6 w-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="text-lg font-semibold text-amber-800 mb-2">Under Maintenance</h3>
+                      <p className="text-amber-700 mb-3">
+                        We're currently upgrading our contact system to serve you better! The online form submission option is temporarily unavailable.
+                      </p>
+                      <div className="bg-amber-100 rounded-md p-3 mb-3">
+                        <p className="text-amber-800 text-sm font-medium mb-2">📞 Alternative Ways to Reach Us:</p>
+                        <ul className="text-amber-700 text-sm space-y-1">
+                          <li>• Call us: <a href="tel:+919025262526" className="font-semibold hover:underline">+91 9025262526</a></li>
+                          <li>• Email us: <a href="mailto:info@svccollege.ac.in" className="font-semibold hover:underline">info@svccollege.ac.in</a></li>
+                          <li>• Visit our campus during office hours</li>
+                        </ul>
+                      </div>
+                      <p className="text-amber-600 text-sm">
+                        Thank you for your patience. We'll be back soon with an enhanced contact experience!
+                      </p>
+                    </div>
+                  </div>
                 </div>
               )}
 

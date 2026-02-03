@@ -142,6 +142,12 @@ const Footer = () => {
               TNEA Counselling Code: 4967
             </span>
           </p>
+          <p className="mt-3 text-gray-400">
+            <span className="inline-flex items-center">
+              <span className="text-primary-400 mr-2">⚡</span>
+              Website Developed by ECE Students
+            </span>
+          </p>
         </div>
       </div>
     </footer>

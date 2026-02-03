@@ -6,23 +6,23 @@ const Home = () => {
   const highlights = [
     {
       icon: '🎓',
+      title: 'Founded in 2001',
+      description: 'Established by Dr. Murugiah D.Litt in memory of Thiru. S.Veerasamy Chettiar',
+    },
+    {
+      icon: '🏛️',
       title: 'Anna University Affiliated',
       description: 'Approved by AICTE and affiliated to Anna University',
     },
     {
-      icon: '🏛️',
+      icon: '📋',
       title: 'TNEA Code: 4967',
       description: 'Apply through Tamil Nadu Engineering Admissions',
     },
     {
-      icon: '👨‍🎓',
-      title: '9 Departments',
-      description: 'Diverse range of engineering and management programs',
-    },
-    {
-      icon: '🏆',
-      title: 'Excellence in Education',
-      description: 'Committed to quality education and student success',
+      icon: '🏗️',
+      title: '80 Acre Campus',
+      description: 'Spacious campus with modern infrastructure and facilities',
     },
   ];
 
@@ -34,10 +34,10 @@ const Home = () => {
       image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHNjaWVuY2V8ZW58MHx8fHwxNzA5OTQ1NDg5fDA&ixlib=rb-4.1.0&q=85',
     },
     {
-      name: 'Artificial Intelligence & ML',
-      icon: '🤖',
-      description: 'Data-driven intelligence and future technologies',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fHx8MTcwOTk0NTQ4OXww&ixlib=rb-4.1.0&q=85',
+      name: 'Information Technology',
+      icon: '💾',
+      description: 'Software engineering, database systems, and IT infrastructure management',
+      image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxpbmZvcm1hdGlvbiUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzA5OTQ1NDg5fDA&ixlib=rb-4.1.0&q=85',
     },
     {
       name: 'Electronics & Communication',
@@ -124,15 +124,10 @@ const Home = () => {
             <div>
               <h2 className="section-title">About SVCET</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                S.Veerasamy Chettiar College of Engineering and Technology is a premier
-                engineering institution in Tirunelveli District, Tamil Nadu. Affiliated to Anna
-                University and approved by AICTE, we are committed to providing quality technical
-                education and fostering innovation.
+                Founded in 2001 by philanthropist Dr. Murugiah D.Litt in memory of his father Thiru. S.Veerasamy Chettiar, SVCET is part of the S.Veerasamy Chettiar Educational and Charitable Trust established in 1997. We are committed to shaping every student into a worthy citizen with quality education and career opportunities.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Our college offers a comprehensive range of undergraduate and postgraduate programs
-                in engineering, computer applications, and management, preparing students for
-                successful careers in their chosen fields.
+                Located on an 80-acre campus on the Puliangudi - Sankarankovil road in Tirunelveli District, our institute provides professional education to rural youth, contributing to nation-building and enabling students to achieve excellence in their pursuits.
               </p>
               <Link
                 to="/about"
@@ -157,7 +152,7 @@ const Home = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1536982679170-1b2277759c92?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb2xsZWdlJTIwY2FtcHVzfGVufDB8fHx8MTc3MDA0OTQ4OXww&ixlib=rb-4.1.0&q=85"
+                src="https://svccollege.ac.in/images/slider-images/header-slide.png"
                 alt="SVCET Campus Building"
                 className="w-full h-96 object-cover"
                 loading="lazy"
