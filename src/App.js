@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ChatBot from './components/ChatBot';
+import PageTransition from './components/PageTransition';
 
 // Pages
 import Home from './pages/Home';
@@ -22,16 +23,18 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/departments" element={<Departments />} />
-            <Route path="/programs" element={<Programs />} />
-            <Route path="/admissions" element={<Admissions />} />
-            <Route path="/facilities" element={<Facilities />} />
-            <Route path="/news-events" element={<NewsEvents />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <PageTransition>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/departments" element={<Departments />} />
+              <Route path="/programs" element={<Programs />} />
+              <Route path="/admissions" element={<Admissions />} />
+              <Route path="/facilities" element={<Facilities />} />
+              <Route path="/news-events" element={<NewsEvents />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </PageTransition>
         </main>
         <Footer />
         <ChatBot />

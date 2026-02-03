@@ -1,0 +1,511 @@
+/* Premium Animations for SVCET Website */
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Down Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Slide In Left Animation */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide In Right Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 3D Page Transition Animations */
+@keyframes pageFlipIn {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(-45deg) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes pageFlipOut {
+  0% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(45deg) scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateY(90deg) scale(0.8);
+  }
+}
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg);
+  }
+  75% {
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(90deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+  }
+}
+
+@keyframes doorOpen {
+  0% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-75deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes doorClose {
+  0% {
+    transform: rotateY(75deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  }
+}
+
+/* Particle Explosion */
+@keyframes particleExplosion {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(0);
+    opacity: 0;
+  }
+}
+
+/* 3D Glossy Animations */
+@keyframes glossyShine {
+  0% {
+    transform: translateX(-100%) skewX(-15deg) rotateX(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg) rotateX(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glossy3D {
+  0%, 100% {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+    filter: brightness(1) contrast(1);
+  }
+  25% {
+    transform: rotateX(5deg) rotateY(-5deg) translateZ(20px);
+    filter: brightness(1.1) contrast(1.1);
+  }
+  50% {
+    transform: rotateX(-5deg) rotateY(5deg) translateZ(30px);
+    filter: brightness(1.2) contrast(1.2);
+  }
+  75% {
+    transform: rotateX(3deg) rotateY(-3deg) translateZ(15px);
+    filter: brightness(1.1) contrast(1.1);
+  }
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(10deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(0deg);
+    opacity: 0.3;
+  }
+}
+
+@keyframes glossyReflection {
+  0%, 100% {
+    background-position: -200% center;
+    transform: rotateX(0deg);
+  }
+  50% {
+    background-position: 200% center;
+    transform: rotateX(10deg);
+  }
+}
+
+/* Apply animations to utility classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-page-flip-in {
+  animation: pageFlipIn 0.8s ease-out;
+}
+
+.animate-page-flip-out {
+  animation: pageFlipOut 0.6s ease-in;
+}
+
+.animate-cube-rotate {
+  animation: cubeRotate 1.2s ease-in-out;
+}
+
+.animate-door-open {
+  animation: doorOpen 0.6s ease-in;
+}
+
+.animate-door-close {
+  animation: doorClose 0.8s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-particle-explosion {
+  animation: particleExplosion 1s ease-out forwards;
+}
+
+.animate-glossy-shine {
+  animation: glossyShine 4s ease-in-out infinite;
+}
+
+.animate-3d-glossy {
+  animation: glossy3D 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.animate-3d-rotate {
+  animation: rotate3D 8s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.animate-glossy-reflection {
+  animation: glossyReflection 5s ease-in-out infinite;
+}
+
+/* 3D Transform Utilities */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+.rotate-y-90 {
+  transform: rotateY(90deg);
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.rotate-x-90 {
+  transform: rotateX(90deg);
+}
+
+.scale-95 {
+  transform: scale(0.95);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+/* Page transition specific classes */
+.page-transition-enter {
+  opacity: 0;
+  transform: rotateY(-90deg) scale(0.8);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: rotateY(90deg) scale(0.8);
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(99, 102, 241, 0.2);
+  color: #4f46e5;
+}
+
+/* Focus styles for accessibility */
+.focus-ring:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Glassmorphism base class */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Premium gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Stagger animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* Animation delays for 3D glossy effects */
+.animation-delay-1000 { animation-delay: 1s; }
+.animation-delay-1500 { animation-delay: 1.5s; }
+.animation-delay-2000 { animation-delay: 2s; }
+
+/* Perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.perspective-500 {
+  perspective: 500px;
+  perspective-origin: 50% 50%;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+  perspective-origin: 50% 50%;
+}
+
+/* 3D Perspective for page transitions */
+.page-perspective {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+/* Loading cube styles */
+.loading-cube {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: cubeRotate 2s infinite ease-in-out;
+}
+
+.cube-face {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.cube-face:nth-child(1) { transform: translateZ(30px); }
+.cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(30px); }
+.cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(30px); }
+.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(30px); }
+.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(30px); }
+.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(30px); }

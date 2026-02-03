@@ -196,7 +196,10 @@ const Departments = () => {
           <p className="text-xl mb-8 text-gray-100">
             Apply through TNEA and start your engineering journey today
           </p>
-          <Link to="/admissions" className="btn-primary bg-white text-primary-700 hover:bg-gray-100">
+          <Link 
+            to="/admissions" 
+            className="bg-white text-primary-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300 ease-out shadow-lg hover:shadow-xl inline-flex items-center group"
+          >
             View Admission Process
           </Link>
         </div>
